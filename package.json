@@ -1,0 +1,39 @@
+{
+    "name": "ibm-i-cl",
+    "displayName": "IBM i CL",
+    "description": "Language support of IBM i CL",
+    "icon": "icon.png",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "author": {
+        "name": "Boyka Chongyang Zhu"
+    },
+    "publisher": "BoykaChongyangZhu",
+    "repository": {
+        "url": "https://github.com/BoykaZhu/ibm-i-cl"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "configurationDefaults": {
+            "[IBMiCL]": {
+                "editor.rulers": [80],
+                "editor.minimap.maxColumn": 100
+            }
+        },
+        "languages": [{
+            "id": "IBMiCL",
+            "aliases": ["IBMiCL", "as400CL"],
+            "extensions": [".CLLE",".clle", ".CLP", ".clp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "IBMiCL",
+            "scopeName": "source.ibmicl",
+            "path": "./syntaxes/ibmicl.tmLanguage.json"
+        }]
+    }
+}
