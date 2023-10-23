@@ -27,5 +27,5 @@
         ["\"", "\""],
         ["'", "'"]
     ],
-    "editor.maxTokenizationLineLength": "80"    
+    // "editor.maxTokenizationLineLength": "80"    
 }
